@@ -1,0 +1,236 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.primaryTitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #2E2E2E;
+}
+
+.secondaryTitlePoppins {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.secondaryTitleInter {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: #18191F;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.primaryButton {
+    width: 160px;
+    height: 48px;
+    background: #B00000;
+    box-shadow: 0 0 64px rgba(176, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #FFFF;
+}
+
+.secondaryButton {
+    width: 160px;
+    height: 48px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    color: #000000;
+}
+
+.header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header .about {
+    display: flex;
+    gap: 33px;
+}
+
+.header .account {
+    display: flex;
+    gap: 33px;
+}
+
+.header .account .navItem:nth-child(1) {
+    border-right: 2px solid #DAD8D8;
+    padding-right: 33px;
+}
+
+.header .navItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.header .navItem::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #B00000;
+    border-radius: 10px;
+}
+
+.header .navItem:hover::before {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 79px;
+}
+
+.firstScreen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    justify-items: end;
+}
+
+.firstScreen .leftContent .tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    border-bottom: 1px solid #E5E5E5;
+    width: 259px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+}
+
+
+.firstScreen .leftContent .tab {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(214, 212, 212, 0.88);
+}
+
+.firstScreen .leftContent .active {
+    border-bottom: 1px solid #B00000;
+    color: #B00000;
+}
+
+.firstScreen .description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin: 34px 0 60px;
+}
+
+.firstScreen .actions {
+    display: flex;
+    gap: 24px;
+}
+
+.firstScreen .rightContent {
+    position: relative;
+}
+
+
+.firstScreen .rightContent .one {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 40px 40px;
+    border-color: transparent transparent #B00000 transparent;
+    position: absolute;
+    top: 63px;
+    right: -22px;
+}
+
+.firstScreen .rightContent .two {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 0 0 40px;
+    border-color: transparent transparent transparent #B00000;
+    position: absolute;
+    bottom: 167px;
+    left: -26px;
+}
+
+.firstScreen .rightContent .three {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 72px 72px;
+    border-color: transparent transparent #B00000 transparent;
+    position: absolute;
+    bottom: 47px;
+    right: -22px;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+    gap: 77px;
+    margin: 0 82px 74px;
+}
+
+.partners .leftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.partners .leftContent .description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191F;
+}
+
+.partners .rightContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-evenly;
+    justify-items: end;
+}
+
+
+
+@media screen and (max-width: 1199px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
