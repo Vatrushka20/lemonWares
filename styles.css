@@ -226,7 +226,32 @@
     justify-items: end;
 }
 
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1.03fr 1fr 1fr;
+    grid-gap: 60px;
+    text-align: center;
+}
 
+.benefits .benefit .title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+.benefits .benefit .description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+
+}
 
 @media screen and (max-width: 1199px) {
     .container {
